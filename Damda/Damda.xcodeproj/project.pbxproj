@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		321F5922291F98DD00FEE6DD /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321F5921291F98DD00FEE6DD /* Extension+Color.swift */; };
 		B64995762918226900A70A9A /* DamdaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64995752918226900A70A9A /* DamdaApp.swift */; };
 		B64995782918226900A70A9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64995772918226900A70A9A /* ContentView.swift */; };
 		B649957A2918226A00A70A9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B64995792918226A00A70A9A /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		321F5921291F98DD00FEE6DD /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
 		B64995722918226900A70A9A /* Damda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Damda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64995752918226900A70A9A /* DamdaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamdaApp.swift; sourceTree = "<group>"; };
 		B64995772918226900A70A9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		321F5920291F98B800FEE6DD /* Extension+ */ = {
+			isa = PBXGroup;
+			children = (
+				321F5921291F98DD00FEE6DD /* Extension+Color.swift */,
+			);
+			path = "Extension+";
+			sourceTree = "<group>";
+		};
 		B64995692918226900A70A9A = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 		B64995742918226900A70A9A /* Damda */ = {
 			isa = PBXGroup;
 			children = (
+				321F5920291F98B800FEE6DD /* Extension+ */,
 				B64995752918226900A70A9A /* DamdaApp.swift */,
 				B64995772918226900A70A9A /* ContentView.swift */,
 				B64995792918226A00A70A9A /* Assets.xcassets */,
@@ -147,6 +158,7 @@
 			files = (
 				B649957F2918226A00A70A9A /* Persistence.swift in Sources */,
 				B64995822918226A00A70A9A /* Damda.xcdatamodeld in Sources */,
+				321F5922291F98DD00FEE6DD /* Extension+Color.swift in Sources */,
 				B64995782918226900A70A9A /* ContentView.swift in Sources */,
 				B64995762918226900A70A9A /* DamdaApp.swift in Sources */,
 			);
