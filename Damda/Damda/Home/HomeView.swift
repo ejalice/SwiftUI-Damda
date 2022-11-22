@@ -29,7 +29,7 @@ struct HomeView: View {
                     Spacer()
                     
                     Button {
-                        // TODO: date뷰로 이동
+                        // TODO: NavigationLink로 변경하여 date뷰로 이동
                     } label: {
                         Text("오늘의 사건 작성하기")
                             .font(Font(uiFont: .systemFont(for: .headLine)))
@@ -54,7 +54,6 @@ struct HomeView: View {
                             )
                     }.padding(.bottom, 44)
                         .padding(.top, 20)
-                    
                 }
             }
         }
