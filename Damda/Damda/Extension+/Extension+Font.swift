@@ -66,7 +66,7 @@ enum CustomTextStyle {
 }
 
 // MARK: SwiftUI Font extension
-// .font(Font(uiFont: .systemFont(for: .body2)))
+// 사용법: font(Font(uiFont: .systemFont(for: .body2)))
 extension Font {
     init(uiFont: UIFont) {
         self = Font(uiFont as CTFont)
