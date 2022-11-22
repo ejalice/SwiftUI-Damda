@@ -15,6 +15,7 @@
 		329FA044292CD0870063981A /* AppleSDGothicNeo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 329FA043292CD0870063981A /* AppleSDGothicNeo-Regular.ttf */; };
 		329FA049292CDBD90063981A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329FA048292CDBD90063981A /* HomeView.swift */; };
 		329FA04C292CF2B40063981A /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329FA04B292CF2B40063981A /* LibraryView.swift */; };
+		329FA04F292D41FF0063981A /* VGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329FA04E292D41FF0063981A /* VGridView.swift */; };
 		B64995762918226900A70A9A /* DamdaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64995752918226900A70A9A /* DamdaApp.swift */; };
 		B64995782918226900A70A9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64995772918226900A70A9A /* ContentView.swift */; };
 		B649957A2918226A00A70A9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B64995792918226A00A70A9A /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 		329FA043292CD0870063981A /* AppleSDGothicNeo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AppleSDGothicNeo-Regular.ttf"; sourceTree = "<group>"; };
 		329FA048292CDBD90063981A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		329FA04B292CF2B40063981A /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		329FA04E292D41FF0063981A /* VGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VGridView.swift; sourceTree = "<group>"; };
 		B64995722918226900A70A9A /* Damda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Damda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64995752918226900A70A9A /* DamdaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamdaApp.swift; sourceTree = "<group>"; };
 		B64995772918226900A70A9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,9 +86,18 @@
 		329FA04A292CF29D0063981A /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				329FA04D292D41CD0063981A /* ReuseableViews */,
 				329FA04B292CF2B40063981A /* LibraryView.swift */,
 			);
 			path = Library;
+			sourceTree = "<group>";
+		};
+		329FA04D292D41CD0063981A /* ReuseableViews */ = {
+			isa = PBXGroup;
+			children = (
+				329FA04E292D41FF0063981A /* VGridView.swift */,
+			);
+			path = ReuseableViews;
 			sourceTree = "<group>";
 		};
 		B64995692918226900A70A9A = {
@@ -213,6 +224,7 @@
 				321F5922291F98DD00FEE6DD /* Extension+Color.swift in Sources */,
 				B64995782918226900A70A9A /* ContentView.swift in Sources */,
 				B64995762918226900A70A9A /* DamdaApp.swift in Sources */,
+				329FA04F292D41FF0063981A /* VGridView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
