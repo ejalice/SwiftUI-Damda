@@ -17,6 +17,8 @@
 		329FA04C292CF2B40063981A /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329FA04B292CF2B40063981A /* LibraryView.swift */; };
 		329FA04F292D41FF0063981A /* VGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329FA04E292D41FF0063981A /* VGridView.swift */; };
 		329FA051292D53780063981A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329FA050292D53780063981A /* DetailView.swift */; };
+		329FA057292D5C8D0063981A /* CardFront.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329FA056292D5C8D0063981A /* CardFront.swift */; };
+		329FA059292D5CAC0063981A /* CardBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329FA058292D5CAC0063981A /* CardBack.swift */; };
 		B64995762918226900A70A9A /* DamdaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64995752918226900A70A9A /* DamdaApp.swift */; };
 		B64995782918226900A70A9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64995772918226900A70A9A /* ContentView.swift */; };
 		B649957A2918226A00A70A9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B64995792918226A00A70A9A /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 		329FA04B292CF2B40063981A /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		329FA04E292D41FF0063981A /* VGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VGridView.swift; sourceTree = "<group>"; };
 		329FA050292D53780063981A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		329FA056292D5C8D0063981A /* CardFront.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFront.swift; sourceTree = "<group>"; };
+		329FA058292D5CAC0063981A /* CardBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBack.swift; sourceTree = "<group>"; };
 		B64995722918226900A70A9A /* Damda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Damda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64995752918226900A70A9A /* DamdaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamdaApp.swift; sourceTree = "<group>"; };
 		B64995772918226900A70A9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 			children = (
 				329FA04E292D41FF0063981A /* VGridView.swift */,
 				329FA050292D53780063981A /* DetailView.swift */,
+				329FA056292D5C8D0063981A /* CardFront.swift */,
+				329FA058292D5CAC0063981A /* CardBack.swift */,
 			);
 			path = ReuseableViews;
 			sourceTree = "<group>";
@@ -219,7 +225,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				329FA059292D5CAC0063981A /* CardBack.swift in Sources */,
 				321F5924291F9EED00FEE6DD /* Extension+Font.swift in Sources */,
+				329FA057292D5C8D0063981A /* CardFront.swift in Sources */,
 				329FA049292CDBD90063981A /* HomeView.swift in Sources */,
 				B649957F2918226A00A70A9A /* Persistence.swift in Sources */,
 				329FA051292D53780063981A /* DetailView.swift in Sources */,
