@@ -27,6 +27,9 @@ struct LibraryView: View {
                         Spacer()
                     }
                     Spacer()
+                    ScrollView {
+                        
+                    }
                 }
             }
         }
