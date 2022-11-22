@@ -26,6 +26,23 @@ struct HomeView: View {
                         .cornerRadius(16)
                         .padding(.horizontal, 16)
                 }
+                
+                Button {
+                    
+                } label: {
+                    Text("도감 읽기")
+                        .font(Font(uiFont: .systemFont(for: .headLine)))
+                        .foregroundColor(Color.damdaPrimary)
+                        .padding(.vertical, 24)
+                        .frame(maxWidth: .infinity)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 16)
+                                .stroke(Color.damdaPrimary, lineWidth: 1)
+                                .padding(.horizontal, 16)
+                        )
+                }
+                .padding(.bottom, 44)
+                .padding(.top, 20)
             }
         }
     }
