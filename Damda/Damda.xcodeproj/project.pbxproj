@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		321F5922291F98DD00FEE6DD /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321F5921291F98DD00FEE6DD /* Extension+Color.swift */; };
+		321F5924291F9EED00FEE6DD /* Extension+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321F5923291F9EED00FEE6DD /* Extension+Font.swift */; };
+		329FA03A292CCB8B0063981A /* AppleSDGothicNeo-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 329FA037292CC8F90063981A /* AppleSDGothicNeo-SemiBold.ttf */; };
+		329FA03E292CCB8B0063981A /* AppleSDGothicNeo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 329FA036292CC8F90063981A /* AppleSDGothicNeo-Bold.ttf */; };
+		329FA042292CD07E0063981A /* AppleSDGothicNeo-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 329FA041292CD07E0063981A /* AppleSDGothicNeo-Medium.ttf */; };
+		329FA044292CD0870063981A /* AppleSDGothicNeo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 329FA043292CD0870063981A /* AppleSDGothicNeo-Regular.ttf */; };
 		B64995762918226900A70A9A /* DamdaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64995752918226900A70A9A /* DamdaApp.swift */; };
 		B64995782918226900A70A9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64995772918226900A70A9A /* ContentView.swift */; };
 		B649957A2918226A00A70A9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B64995792918226A00A70A9A /* Assets.xcassets */; };
@@ -18,6 +23,11 @@
 
 /* Begin PBXFileReference section */
 		321F5921291F98DD00FEE6DD /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
+		321F5923291F9EED00FEE6DD /* Extension+Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Font.swift"; sourceTree = "<group>"; };
+		329FA036292CC8F90063981A /* AppleSDGothicNeo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AppleSDGothicNeo-Bold.ttf"; sourceTree = "<group>"; };
+		329FA037292CC8F90063981A /* AppleSDGothicNeo-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AppleSDGothicNeo-SemiBold.ttf"; sourceTree = "<group>"; };
+		329FA041292CD07E0063981A /* AppleSDGothicNeo-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AppleSDGothicNeo-Medium.ttf"; sourceTree = "<group>"; };
+		329FA043292CD0870063981A /* AppleSDGothicNeo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AppleSDGothicNeo-Regular.ttf"; sourceTree = "<group>"; };
 		B64995722918226900A70A9A /* Damda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Damda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64995752918226900A70A9A /* DamdaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamdaApp.swift; sourceTree = "<group>"; };
 		B64995772918226900A70A9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,8 +53,20 @@
 			isa = PBXGroup;
 			children = (
 				321F5921291F98DD00FEE6DD /* Extension+Color.swift */,
+				321F5923291F9EED00FEE6DD /* Extension+Font.swift */,
 			);
 			path = "Extension+";
+			sourceTree = "<group>";
+		};
+		329FA034292CC8E10063981A /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				329FA043292CD0870063981A /* AppleSDGothicNeo-Regular.ttf */,
+				329FA041292CD07E0063981A /* AppleSDGothicNeo-Medium.ttf */,
+				329FA037292CC8F90063981A /* AppleSDGothicNeo-SemiBold.ttf */,
+				329FA036292CC8F90063981A /* AppleSDGothicNeo-Bold.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 		B64995692918226900A70A9A = {
@@ -66,6 +88,7 @@
 		B64995742918226900A70A9A /* Damda */ = {
 			isa = PBXGroup;
 			children = (
+				329FA034292CC8E10063981A /* Font */,
 				321F5920291F98B800FEE6DD /* Extension+ */,
 				B64995752918226900A70A9A /* DamdaApp.swift */,
 				B64995772918226900A70A9A /* ContentView.swift */,
@@ -145,7 +168,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B649957D2918226A00A70A9A /* Preview Assets.xcassets in Resources */,
+				329FA042292CD07E0063981A /* AppleSDGothicNeo-Medium.ttf in Resources */,
 				B649957A2918226A00A70A9A /* Assets.xcassets in Resources */,
+				329FA044292CD0870063981A /* AppleSDGothicNeo-Regular.ttf in Resources */,
+				329FA03A292CCB8B0063981A /* AppleSDGothicNeo-SemiBold.ttf in Resources */,
+				329FA03E292CCB8B0063981A /* AppleSDGothicNeo-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				321F5924291F9EED00FEE6DD /* Extension+Font.swift in Sources */,
 				B649957F2918226A00A70A9A /* Persistence.swift in Sources */,
 				B64995822918226A00A70A9A /* Damda.xcdatamodeld in Sources */,
 				321F5922291F98DD00FEE6DD /* Extension+Color.swift in Sources */,
