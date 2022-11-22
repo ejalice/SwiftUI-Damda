@@ -41,7 +41,8 @@ struct HomeView: View {
                             .padding(.horizontal, 16)
                     }
                     
-                    NavigationLink (destination: LibraryView()) {
+                    NavigationLink (destination: LibraryView()
+                        .navigationBarHidden(true)) {
                         Text("도감 읽기")
                             .font(Font(uiFont: .systemFont(for: .headLine)))
                             .foregroundColor(Color.damdaPrimary)
