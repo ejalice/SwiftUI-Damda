@@ -11,6 +11,22 @@ struct HomeView: View {
     var body: some View {
         ZStack {
             Color.damdaBackGround.ignoresSafeArea()
+            VStack(spacing: 0) {
+                Spacer()
+                
+                Button {
+                    
+                } label: {
+                    Text("오늘의 사건 작성하기")
+                        .font(Font(uiFont: .systemFont(for: .headLine)))
+                        .foregroundColor(Color.damdaGray100)
+                        .padding(.vertical, 24)
+                        .frame(maxWidth: .infinity)
+                        .background(Color.damdaPrimary)
+                        .cornerRadius(16)
+                        .padding(.horizontal, 16)
+                }
+            }
         }
     }
 }
