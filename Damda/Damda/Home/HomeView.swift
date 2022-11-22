@@ -12,6 +12,19 @@ struct HomeView: View {
         ZStack {
             Color.damdaBackGround.ignoresSafeArea()
             VStack(spacing: 0) {
+                HStack {
+                    Spacer()
+                    
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "bell.fill")
+                            .foregroundColor(Color.damdaGray300)
+                    }
+                    .padding(.trailing, 16)
+                    .padding(.top, 12)
+                }
+                
                 Spacer()
                 
                 Button {
