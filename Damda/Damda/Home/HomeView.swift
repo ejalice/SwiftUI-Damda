@@ -15,7 +15,7 @@ struct HomeView: View {
                 Spacer()
                 
                 Button {
-                    
+                    // TODO: date뷰로 이동
                 } label: {
                     Text("오늘의 사건 작성하기")
                         .font(Font(uiFont: .systemFont(for: .headLine)))
