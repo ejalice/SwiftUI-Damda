@@ -20,6 +20,7 @@
 		B649957D2918226A00A70A9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B649957C2918226A00A70A9A /* Preview Assets.xcassets */; };
 		B649957F2918226A00A70A9A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B649957E2918226A00A70A9A /* Persistence.swift */; };
 		B64995822918226A00A70A9A /* Damda.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B64995802918226A00A70A9A /* Damda.xcdatamodeld */; };
+		B68EBA86292E5A37003B994B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68EBA85292E5A37003B994B /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		B649957E2918226A00A70A9A /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		B64995812918226A00A70A9A /* Damda.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Damda.xcdatamodel; sourceTree = "<group>"; };
 		B64995832918226A00A70A9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B68EBA85292E5A37003B994B /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				B64995832918226A00A70A9A /* Info.plist */,
 				B64995802918226A00A70A9A /* Damda.xcdatamodeld */,
 				B649957B2918226A00A70A9A /* Preview Content */,
+				B68EBA85292E5A37003B994B /* Message.swift */,
 			);
 			path = Damda;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				321F5924291F9EED00FEE6DD /* Extension+Font.swift in Sources */,
 				329FA049292CDBD90063981A /* HomeView.swift in Sources */,
 				B649957F2918226A00A70A9A /* Persistence.swift in Sources */,
+				B68EBA86292E5A37003B994B /* Message.swift in Sources */,
 				B64995822918226A00A70A9A /* Damda.xcdatamodeld in Sources */,
 				321F5922291F98DD00FEE6DD /* Extension+Color.swift in Sources */,
 				B64995782918226900A70A9A /* ContentView.swift in Sources */,
