@@ -22,7 +22,7 @@ struct CardBack : View {
                     .cornerRadius(16)
                     .foregroundColor(Color.damdaGray500)
                     .padding()
-                    .frame(maxHeight: UIScreen.main.bounds.height/1.2)
+                    .frame(height: height)
                     .overlay(
                         VStack(spacing: 0){
                             Spacer()
@@ -30,30 +30,18 @@ struct CardBack : View {
                                 .resizable()
                                 .frame(maxWidth: 138, maxHeight: 355)
                                 .scaledToFit()
-                            
                             Text("뒤")
-                                .font(.largeTitle)
+                                .font(Font(uiFont: .systemFont(for: .largeTitle)))
                                 .bold()
-                                .foregroundColor(.white)
+                                .foregroundColor(Color.damdaGray100)
                                 .padding(.top, 40)
                                 .padding(.bottom, 20)
                             
                             Text("2022.11.09 ~")
-                                .font(.title2)
-                                .foregroundColor(Color.damdaGray100)
-                            
-                            Button{
-                             
-                            } label: {
-                                Text("더 알아보기")
-                                    .foregroundColor(.white)
-                                    .padding(.vertical, 8)
-                                    .padding(.horizontal, 16)
-                                    .background(Color.damdaGray600)
-                                    .cornerRadius(16)
-                            }
-                            .padding(.top, 25)
-                            .padding(.bottom, 50)
+                                .font(Font(uiFont: .systemFont(for: .title02)))
+                                .foregroundColor(Color.damdaGray300)
+                                .padding(.bottom, 92)
+
                         }
                     )
         }.rotation3DEffect(Angle(degrees: degree), axis: (x: 0, y: 1, z: 0))

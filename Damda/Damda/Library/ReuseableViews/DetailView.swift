@@ -38,10 +38,33 @@ struct DetailView: View {
             Color.damdaBackGround.ignoresSafeArea()
             ZStack{
                 CardBack(imageName: "Bottle_01", width: 358, height: 660, degree: $backDegree, isFlipped: $isFlipped)
-                CardFront(imageName: "Bottle_01", width: 358, height: 660, degree: $frontDegree, isFlipped: $isFlipped)
-            }
-            .onTapGesture {
-                flipCard()
+                ZStack{
+                    CardFront(imageName: "Bottle_01", width: 358, height: 660, degree: $frontDegree, isFlipped: $isFlipped)
+                    VStack(spacing: 0) {
+                        Spacer()
+                        Button{
+                            flipCard()
+                        } label: {
+                            if isFlipped {
+                                Text("술 이름")
+                                    .foregroundColor(.white)
+                                    .padding(.vertical, 8)
+                                    .padding(.horizontal, 16)
+                                    .background(Color.damdaGray600)
+                                    .cornerRadius(16)
+                            }
+                            else {
+                                Text("더 알아보기")
+                                    .foregroundColor(.white)
+                                    .padding(.vertical, 8)
+                                    .padding(.horizontal, 16)
+                                    .background(Color.damdaGray600)
+                                    .cornerRadius(16)
+                            }
+                        }
+                        .padding(.bottom, 40)
+                    }
+                }
             }
         }
     }
