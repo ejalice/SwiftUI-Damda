@@ -22,11 +22,12 @@ struct DamdaText: View {
             .cornerRadius(16)
             .overlay(
                 RoundedRectangle(cornerRadius: 16)
-                    .stroke(Color.damdaGray400, lineWidth: 1)
+                    .stroke(Color.damdaGray400, lineWidth: 0)
             )
             .foregroundColor(.damdaGray100)
             .padding(.leading, 16)
             .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.bottom, 16)
         
     }
 }
@@ -47,10 +48,11 @@ struct UserText: View {
             .cornerRadius(16)
             .overlay(
                 RoundedRectangle(cornerRadius: 16)
-                    .stroke(Color.damdaPrimary, lineWidth: 1)
+                    .stroke(Color.damdaPrimary, lineWidth: 0)
             )
             .foregroundColor(.damdaGray100)
             .padding(.trailing, 16)
             .frame(maxWidth: .infinity, alignment: .trailing)
+            .padding(.bottom, 16)
     }
 }
