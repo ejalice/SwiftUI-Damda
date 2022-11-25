@@ -37,6 +37,8 @@ struct DateView: View {
                             .stroke(selected == item ? Color.damdaPrimary : Color.damdaGray500, lineWidth: 1)
                     )
                     .foregroundColor(selected == item ? .damdaPrimary : .damdaGray100)
+                    .padding(.bottom, 11)
+                    
                 }
             }
             
