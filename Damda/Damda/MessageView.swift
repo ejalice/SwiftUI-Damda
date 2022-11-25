@@ -11,6 +11,7 @@ struct MessageView: View {
     @State var showFirstMessage: [Bool] = [false, false, false]
     @State var dateSelected: Bool = false
     @State var selected: String?
+    @State var strengthenScroll: Bool = false
     
     var damdaMessage: [String] = [
         "잊지 않고 ‘담다’을 방문해주셔서 감사합니다",
@@ -31,8 +32,11 @@ struct MessageView: View {
                         Group {
                             
                             if showFirstMessage[num] {
-                                DamdaText(damdaMessage[num])
-                                
+                                if (num != 2) {
+                                    DamdaText(damdaMessage[num])
+                                } else {
+                                    DateView(selected: $selected, strengthenScroll: $strengthenScroll)
+                                }
                             } else {
                                 DamdaText(damdaMessage[num]).hidden()
                             }
@@ -49,7 +53,7 @@ struct MessageView: View {
                     
                 }
                 .border(.blue)
-                .frame(width: UIScreen.main.bounds.width, height: 383)
+                .frame(width: UIScreen.main.bounds.width, height: strengthenScroll ? 560 : 383)
                 .padding(.top, 1)
                 Spacer()
             }

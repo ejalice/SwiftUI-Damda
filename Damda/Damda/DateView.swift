@@ -25,6 +25,9 @@ struct DateView: View {
                 ForEach(items, id: \.self) { item in
                     Button(action: {
                         selected = item
+                        if (selected == "직접선택") {
+                            strengthenScroll.toggle()
+                        }
                     }, label: {
                         Text(item)
                     })
