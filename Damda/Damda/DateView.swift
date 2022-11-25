@@ -27,6 +27,8 @@ struct DateView: View {
                         selected = item
                         if (selected == "직접선택") {
                             strengthenScroll.toggle()
+                        } else {
+                            strengthenScroll = false
                         }
                     }, label: {
                         Text(item)
