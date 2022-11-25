@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct MessageView: View {
-    @State var show: [Bool] = [false, false]
+    @State var showFirstMessage: [Bool] = [false, false, false]
+    @State var dateSelected: Bool = false
+    @State var selected: String?
     
     var damdaMessage: [String] = [
         "잊지 않고 ‘담다’을 방문해주셔서 감사합니다",
@@ -25,17 +27,19 @@ struct MessageView: View {
                 ScrollView {
                     Spacer(minLength: 20)
                     
-                    ForEach(0..<2){ num in
+                    ForEach(0..<3){ num in
                         Group {
-                            if show[num] {
+                            
+                            if showFirstMessage[num] {
                                 DamdaText(damdaMessage[num])
+                                
                             } else {
                                 DamdaText(damdaMessage[num]).hidden()
                             }
                         }
                         .onAppear {
                             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5 * Double((num+1))) {
-                                self.show[num].toggle()
+                                self.showFirstMessage[num].toggle()
                             }
                         }
                         
@@ -43,14 +47,15 @@ struct MessageView: View {
                     
                     Spacer()
                     
-                }.border(.blue)
-                    .frame(width: UIScreen.main.bounds.width, height: 383)
+                }
+                .border(.blue)
+                .frame(width: UIScreen.main.bounds.width, height: 383)
+                .padding(.top, 1)
                 Spacer()
             }
             .background(Color.damdaBackGround)
         }
     }
-    
 }
 
 struct MessageView_Previews: PreviewProvider {
