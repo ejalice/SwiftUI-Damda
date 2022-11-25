@@ -53,7 +53,7 @@ struct MessageView: View {
                     
                 }
                 .border(.blue)
-                .frame(width: UIScreen.main.bounds.width, height: strengthenScroll ? 560 : 383)
+                .frame(width: UIScreen.main.bounds.width, height: strengthenScroll ? 670 : 383)
                 .padding(.top, 1)
                 Spacer()
             }

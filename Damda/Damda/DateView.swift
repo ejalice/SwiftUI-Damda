@@ -52,6 +52,7 @@ struct DateView: View {
                 ){
                     Text("Pick Date")
                 }
+                .environment(\.locale, Locale.init(identifier: "en"))
                 .accentColor(.damdaPrimary)
                 .datePickerStyle(.graphical)
                 .frame(width: 343, height: 351)
