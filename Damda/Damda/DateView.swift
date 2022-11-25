@@ -28,6 +28,7 @@ struct DateView: View {
                     }, label: {
                         Text(item)
                     })
+                    .buttonStyle(DateButton())
                     .overlay(
                         RoundedRectangle(cornerRadius: 16)
                             .stroke(selected == item ? Color.damdaPrimary : Color.damdaGray500, lineWidth: 1)
@@ -47,3 +48,12 @@ struct DateView: View {
 //        DateView()
 //    }
 //}
+
+struct DateButton: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .padding(EdgeInsets(top: 10, leading: 20, bottom: 10, trailing: 20))
+            .background(Color.damdaGray500)
+            .cornerRadius(16)
+    }
+}
