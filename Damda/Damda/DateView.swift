@@ -56,6 +56,8 @@ struct DateView: View {
                 .datePickerStyle(.graphical)
                 .frame(width: 343, height: 351)
                 .background(Color(UIColor(red: 28/255, green: 28/255, blue: 30/255, alpha: 1.0)))
+                .cornerRadius(13)
+                .shadow(color: .white.opacity(0.1), radius: 60, x: 0, y: 10)
                 
                 Text(date, formatter: dateFormatter)
             }
