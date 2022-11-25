@@ -37,6 +37,22 @@ struct DateView: View {
                 }
             }
             
+            if (selected == "직접선택") {
+                DatePicker(
+                    selection: $date,
+                    in: ...Date(),
+                    displayedComponents: .date
+                ){
+                    Text("Pick Date")
+                }
+                .accentColor(.damdaPrimary)
+                .datePickerStyle(.graphical)
+                .frame(width: 343, height: 351)
+                .background(Color(UIColor(red: 28/255, green: 28/255, blue: 30/255, alpha: 1.0)))
+                
+                Text(date, formatter: dateFormatter)
+            }
+            
         }
         
     }
