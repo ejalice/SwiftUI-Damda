@@ -31,14 +31,14 @@ struct CardFront : View {
                                 .frame(maxWidth: 138, maxHeight: 355)
                                 .scaledToFit()
                             Text("앞")
-                                .font(Font(uiFont: .systemFont(for: .largeTitle)))
+                                .LargeTitle()
                                 .bold()
                                 .foregroundColor(Color.damdaGray100)
                                 .padding(.top, 40)
                                 .padding(.bottom, 20)
                             
                             Text("2022.11.09 ~")
-                                .font(Font(uiFont: .systemFont(for: .title02)))
+                                .Title2()
                                 .foregroundColor(Color.damdaGray300)
                                 .padding(.bottom, 92)
 

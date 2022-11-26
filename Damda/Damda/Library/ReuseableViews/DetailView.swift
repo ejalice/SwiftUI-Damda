@@ -47,7 +47,8 @@ struct DetailView: View {
                         } label: {
                             if isFlipped {
                                 Text("술 이름")
-                                    .foregroundColor(.white)
+                                    .foregroundColor(Color.damdaGray100)
+                                    .Body2()
                                     .padding(.vertical, 8)
                                     .padding(.horizontal, 16)
                                     .background(Color.damdaGray600)
@@ -55,7 +56,8 @@ struct DetailView: View {
                             }
                             else {
                                 Text("더 알아보기")
-                                    .foregroundColor(.white)
+                                    .foregroundColor(Color.damdaGray100)
+                                    .Body2()
                                     .padding(.vertical, 8)
                                     .padding(.horizontal, 16)
                                     .background(Color.damdaGray600)
