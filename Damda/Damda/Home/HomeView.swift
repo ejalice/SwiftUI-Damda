@@ -31,7 +31,7 @@ struct HomeView: View {
                     // TODO: date뷰로 이동
                 } label: {
                     Text("오늘의 사건 작성하기")
-                        .font(Font(uiFont: .systemFont(for: .headLine)))
+                        .Headline()
                         .foregroundColor(Color.damdaGray100)
                         .padding(.vertical, 24)
                         .frame(maxWidth: .infinity)
@@ -44,7 +44,7 @@ struct HomeView: View {
                     
                 } label: {
                     Text("도감 읽기")
-                        .font(Font(uiFont: .systemFont(for: .headLine)))
+                        .Headline()
                         .foregroundColor(Color.damdaPrimary)
                         .padding(.vertical, 24)
                         .frame(maxWidth: .infinity)

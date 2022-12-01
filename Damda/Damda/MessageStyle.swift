@@ -16,7 +16,7 @@ struct DamdaText: View {
     
     var body: some View {
         Text(text)
-            .font(Font(uiFont: .systemFont(for: .subHead)))
+            .Subhead()
             .padding(EdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 16))
             .background(Color.damdaGray400)
             .cornerRadius(16)
@@ -42,7 +42,7 @@ struct UserText: View {
     
     var body: some View {
         Text(text)
-            .font(Font(uiFont: .systemFont(for: .subHead)))
+            .Subhead()
             .padding(EdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 16))
             .background(Color.damdaPrimary)
             .cornerRadius(16)
