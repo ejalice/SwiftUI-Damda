@@ -10,10 +10,6 @@
 		3212D6FA293DE0D80080F3E0 /* CardHistoryDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3212D6F9293DE0D80080F3E0 /* CardHistoryDateView.swift */; };
 		321F5922291F98DD00FEE6DD /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321F5921291F98DD00FEE6DD /* Extension+Color.swift */; };
 		321F5924291F9EED00FEE6DD /* Extension+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321F5923291F9EED00FEE6DD /* Extension+Font.swift */; };
-		329FA03A292CCB8B0063981A /* AppleSDGothicNeo-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 329FA037292CC8F90063981A /* AppleSDGothicNeo-SemiBold.ttf */; };
-		329FA03E292CCB8B0063981A /* AppleSDGothicNeo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 329FA036292CC8F90063981A /* AppleSDGothicNeo-Bold.ttf */; };
-		329FA042292CD07E0063981A /* AppleSDGothicNeo-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 329FA041292CD07E0063981A /* AppleSDGothicNeo-Medium.ttf */; };
-		329FA044292CD0870063981A /* AppleSDGothicNeo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 329FA043292CD0870063981A /* AppleSDGothicNeo-Regular.ttf */; };
 		329FA049292CDBD90063981A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329FA048292CDBD90063981A /* HomeView.swift */; };
 		329FA04C292CF2B40063981A /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329FA04B292CF2B40063981A /* LibraryView.swift */; };
 		329FA04F292D41FF0063981A /* VGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329FA04E292D41FF0063981A /* VGridView.swift */; };
@@ -32,10 +28,6 @@
 		3212D6F9293DE0D80080F3E0 /* CardHistoryDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardHistoryDateView.swift; sourceTree = "<group>"; };
 		321F5921291F98DD00FEE6DD /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
 		321F5923291F9EED00FEE6DD /* Extension+Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Font.swift"; sourceTree = "<group>"; };
-		329FA036292CC8F90063981A /* AppleSDGothicNeo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AppleSDGothicNeo-Bold.ttf"; sourceTree = "<group>"; };
-		329FA037292CC8F90063981A /* AppleSDGothicNeo-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AppleSDGothicNeo-SemiBold.ttf"; sourceTree = "<group>"; };
-		329FA041292CD07E0063981A /* AppleSDGothicNeo-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AppleSDGothicNeo-Medium.ttf"; sourceTree = "<group>"; };
-		329FA043292CD0870063981A /* AppleSDGothicNeo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AppleSDGothicNeo-Regular.ttf"; sourceTree = "<group>"; };
 		329FA048292CDBD90063981A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		329FA04B292CF2B40063981A /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		329FA04E292D41FF0063981A /* VGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VGridView.swift; sourceTree = "<group>"; };
@@ -70,17 +62,6 @@
 				321F5923291F9EED00FEE6DD /* Extension+Font.swift */,
 			);
 			path = "Extension+";
-			sourceTree = "<group>";
-		};
-		329FA034292CC8E10063981A /* Font */ = {
-			isa = PBXGroup;
-			children = (
-				329FA043292CD0870063981A /* AppleSDGothicNeo-Regular.ttf */,
-				329FA041292CD07E0063981A /* AppleSDGothicNeo-Medium.ttf */,
-				329FA037292CC8F90063981A /* AppleSDGothicNeo-SemiBold.ttf */,
-				329FA036292CC8F90063981A /* AppleSDGothicNeo-Bold.ttf */,
-			);
-			path = Font;
 			sourceTree = "<group>";
 		};
 		329FA045292CDBAC0063981A /* Home */ = {
@@ -133,7 +114,6 @@
 			children = (
 				329FA04A292CF29D0063981A /* Library */,
 				329FA045292CDBAC0063981A /* Home */,
-				329FA034292CC8E10063981A /* Font */,
 				321F5920291F98B800FEE6DD /* Extension+ */,
 				B64995752918226900A70A9A /* DamdaApp.swift */,
 				B64995772918226900A70A9A /* ContentView.swift */,
@@ -213,11 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B649957D2918226A00A70A9A /* Preview Assets.xcassets in Resources */,
-				329FA042292CD07E0063981A /* AppleSDGothicNeo-Medium.ttf in Resources */,
 				B649957A2918226A00A70A9A /* Assets.xcassets in Resources */,
-				329FA044292CD0870063981A /* AppleSDGothicNeo-Regular.ttf in Resources */,
-				329FA03A292CCB8B0063981A /* AppleSDGothicNeo-SemiBold.ttf in Resources */,
-				329FA03E292CCB8B0063981A /* AppleSDGothicNeo-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
