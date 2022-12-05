@@ -37,16 +37,16 @@ struct DetailView: View {
         ZStack{
             Color.damdaBackGround.ignoresSafeArea()
             ZStack{
-                CardBack(imageName: "Bottle_01", width: 358, height: 660, degree: $backDegree, isFlipped: $isFlipped)
+                CardBackView(imageName: "Bottle_01", width: 358, height: 660, degree: $backDegree, isFlipped: $isFlipped)
                 ZStack{
-                    CardFront(imageName: "Bottle_01", width: 358, height: 660, degree: $frontDegree, isFlipped: $isFlipped)
+                    CardFrontView(imageName: "Bottle_01", width: 358, height: 660, degree: $frontDegree, isFlipped: $isFlipped)
                     VStack(spacing: 0) {
                         Spacer()
                         Button{
                             flipCard()
                         } label: {
                             if isFlipped {
-                                Text("술 이름")
+                                Text("술 이름 확인")
                                     .foregroundColor(Color.damdaGray100)
                                     .Body2()
                                     .padding(.vertical, 8)

@@ -1,5 +1,5 @@
 //
-//  CardBack.swift
+//  CardBackView.swift
 //  Damda
 //
 //  Created by 이창형 on 2022/11/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CardBack : View {
+struct CardBackView : View {
     let imageName: String
     let width : CGFloat
     let height : CGFloat
@@ -54,16 +54,22 @@ struct CardBack : View {
                                 .Body1()
                                 .padding(.top, 8)
                                 .padding(.leading, 51)
-                                .padding(.trailing, 29)
-                            
-                            HStack {
-                                Text("히스토리")
-                                    .foregroundColor(Color.damdaGray300)
-                                    .Subhead()
-                                Spacer()
+                                .padding(.trailing, 45)
+                            VStack {
+                                HStack {
+                                    // TODO: 데이터 받아와야 함
+                                    Text("히스토리")
+                                        .foregroundColor(Color.damdaGray300)
+                                        .Subhead()
+                                    Spacer()
+                                }
+                                CardHistoryDateView()
+                                CardHistoryDateView()
+                                CardHistoryDateView()
                             }
-                            .padding(.top, 38)
+                            .padding(.top, 36)
                             .padding(.leading, 51)
+                            .padding(.trailing, 45)
                             
                             Spacer()
                             

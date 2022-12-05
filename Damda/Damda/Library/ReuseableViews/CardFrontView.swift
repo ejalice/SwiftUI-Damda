@@ -1,5 +1,5 @@
 //
-//  CardFront.swift
+//  CardFrontView.swift
 //  Damda
 //
 //  Created by 이창형 on 2022/11/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CardFront : View {
+struct CardFrontView : View {
     let imageName: String
     let width : CGFloat
     let height : CGFloat
