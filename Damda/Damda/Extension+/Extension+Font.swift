@@ -57,3 +57,4 @@ extension View {
         ModifiedContent(content: self, modifier: FontWithLineHeight(font: .Footnote, lineHeight: 16))
     }
 }
+
