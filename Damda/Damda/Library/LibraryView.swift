@@ -9,6 +9,12 @@ import SwiftUI
 
 struct LibraryView: View {
     @Environment(\.presentationMode) var presentationMode
+    // 숙성 중
+    @State private var ripeningEnable = false
+    // 숙성 완료
+    @State private var maturedEnable = false
+    // 미제 사건
+    @State private var mysteryEnable = false
     
     var body: some View {
         NavigationView {
