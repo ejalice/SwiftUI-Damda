@@ -27,13 +27,41 @@ struct LibraryView: View {
                         } label: {
                             Image(systemName: "arrow.backward")
                                 .foregroundColor(Color.damdaGray200)
+                                .bold()
                         }
                         .padding(.leading, 18)
                         .padding(.top, 12)
+                        
                         Spacer()
                     }
-                    Spacer()
                     ScrollView {
+                        VStack(spacing: 0) {
+                            HStack {
+                                LibraryIncidentView()
+                                    .padding(.top, 28)
+                                Button {
+                                    ripeningEnable.toggle()
+                                    if ripeningEnable {
+                                        // 등장
+                                    } else {
+                                        // 삭제
+                                    }
+                                } label: {
+                                    if ripeningEnable {
+                                        Image(systemName: "chevron.down")
+                                            .foregroundColor(Color.damdaGray200)
+                                            .bold()
+                                            .padding(.top, 25)
+                                    } else {
+                                        Image(systemName: "chevron.up")
+                                            .foregroundColor(Color.damdaGray200)
+                                            .bold()
+                                            .padding(.top, 25)
+                                    }
+                                }
+                            }
+                        }
+                        .padding(.horizontal, 16)
 
                         
                     }
