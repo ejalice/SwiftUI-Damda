@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct LibraryIncidentView: View {
-    let model = Model()
     var titleText: String
+    var bottleCount: Int
     var body: some View {
         HStack(spacing: 0) {
             // TODO: 데이터 받아와야함
@@ -18,7 +18,7 @@ struct LibraryIncidentView: View {
                 .Headline()
             
             // TODO: 데이터 받아와야함
-            Text("\(model.bottleImageArray.count)개")
+            Text("\(bottleCount)개")
                 .foregroundColor(Color.damdaGray300)
                 .Body2()
                 .padding(.leading, 8)

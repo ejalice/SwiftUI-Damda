@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct LibraryView: View {
+    let model = Model()
+    
     @Environment(\.presentationMode) var presentationMode
     // 숙성 중
     @State private var ripeningEnable = false
@@ -40,15 +42,10 @@ struct LibraryView: View {
                     ScrollView {
                         VStack(spacing: 0) {
                             HStack {
-                                LibraryIncidentView(titleText: ripeningString)
+                                LibraryIncidentView(titleText: ripeningString, bottleCount: model.ripeningBottleImageArray.count)
                                     .padding(.top, 28)
                                 Button {
                                     ripeningEnable.toggle()
-                                    if ripeningEnable {
-                                        // 등장
-                                    } else {
-                                        // 삭제
-                                    }
                                 } label: {
                                     if ripeningEnable {
                                         Image(systemName: "chevron.down")
@@ -63,8 +60,15 @@ struct LibraryView: View {
                                     }
                                 }
                             }
+                            if ripeningEnable {
+                                // 등장
+                                LibraryDetailView()
+                                    .frame(width: 300, height: 500)
+                            } else {
+                                // 삭제
+                            }
                             HStack {
-                                LibraryIncidentView(titleText: maturedString)
+                                LibraryIncidentView(titleText: maturedString, bottleCount: model.maturedBottleImageArray.count)
                                     .padding(.top, 28)
                                 Button {
                                     maturedEnable.toggle()
@@ -88,7 +92,7 @@ struct LibraryView: View {
                                 }
                             }
                             HStack {
-                                LibraryIncidentView(titleText: mysteryString)
+                                LibraryIncidentView(titleText: mysteryString, bottleCount: model.mysteryBottleImageArray.count)
                                     .padding(.top, 28)
                                 Button {
                                     mysteryEnable.toggle()

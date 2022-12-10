@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct LibraryDetailView: View {
+    let model = Model()
+    let rows = [GridItem(.fixed(212))]
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        LazyHGrid(rows: rows , spacing: 20) {
+            ForEach(model.maturedBottleImageArray, id: \.self) {
+                Image("\($0)")
+                    .resizable()
+                    .frame(width: 169)
+                    .scaledToFit()
+                    .cornerRadius(10)
+            }
+        }
     }
 }
 
