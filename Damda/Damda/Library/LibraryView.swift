@@ -63,7 +63,6 @@ struct LibraryView: View {
                             if ripeningEnable {
                                 // 등장
                                 LibraryDetailView()
-                                    .frame(width: 300, height: 500)
                             } else {
                                 // 삭제
                             }

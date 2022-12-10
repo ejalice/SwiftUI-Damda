@@ -9,13 +9,14 @@ import SwiftUI
 
 struct LibraryDetailView: View {
     let model = Model()
-    let rows = [GridItem(.fixed(212))]
+    let columns = Array(repeating: GridItem(.adaptive(minimum: 112, maximum: 112)), count: 3)
     var body: some View {
-        LazyHGrid(rows: rows , spacing: 20) {
-            ForEach(model.maturedBottleImageArray, id: \.self) {
+        
+        LazyVGrid(columns: columns, alignment: .center){
+            ForEach(model.ripeningBottleImageArray, id: \.self) {
                 Image("\($0)")
                     .resizable()
-                    .frame(width: 169)
+                    .frame(height: 140)
                     .scaledToFit()
                     .cornerRadius(10)
             }
