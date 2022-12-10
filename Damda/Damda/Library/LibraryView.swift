@@ -62,7 +62,8 @@ struct LibraryView: View {
                             }
                             if ripeningEnable {
                                 // 등장
-                                LibraryDetailView()
+                                LibraryDetailView(imageArray: model.ripeningBottleImageArray)
+                                    .padding(.top, 16)
                             } else {
                                 // 삭제
                             }
@@ -90,6 +91,13 @@ struct LibraryView: View {
                                     }
                                 }
                             }
+                            if maturedEnable {
+                                // 등장
+                                LibraryDetailView(imageArray: model.maturedBottleImageArray)
+                                    .padding(.top, 16)
+                            } else {
+                                // 삭제
+                            }
                             HStack {
                                 LibraryIncidentView(titleText: mysteryString, bottleCount: model.mysteryBottleImageArray.count)
                                     .padding(.top, 28)
@@ -114,10 +122,18 @@ struct LibraryView: View {
                                     }
                                 }
                             }
+                            if mysteryEnable {
+                                // 등장
+                                LibraryDetailView(imageArray: model.mysteryBottleImageArray)
+                                    .padding(.top, 16)
+                            } else {
+                                // 삭제
+                            }
                         }
                         .padding(.horizontal, 16)
-
-                        
+                        .animation(SwiftUI.Animation.easeInOut(duration: 0.4), value: ripeningEnable)
+                        .animation(SwiftUI.Animation.easeInOut(duration: 0.4), value: maturedEnable)
+                        .animation(SwiftUI.Animation.easeInOut(duration: 0.4), value: mysteryEnable)
                     }
                 }
             }
