@@ -15,6 +15,9 @@ struct LibraryView: View {
     @State private var maturedEnable = false
     // 미제 사건
     @State private var mysteryEnable = false
+    @State private var ripeningString = "숙성중인 사건"
+    @State private var maturedString = "숙성 완료된 사건"
+    @State private var mysteryString = "미제 사건"
     
     var body: some View {
         NavigationView {
@@ -37,7 +40,7 @@ struct LibraryView: View {
                     ScrollView {
                         VStack(spacing: 0) {
                             HStack {
-                                LibraryIncidentView()
+                                LibraryIncidentView(titleText: ripeningString)
                                     .padding(.top, 28)
                                 Button {
                                     ripeningEnable.toggle()
@@ -48,6 +51,54 @@ struct LibraryView: View {
                                     }
                                 } label: {
                                     if ripeningEnable {
+                                        Image(systemName: "chevron.down")
+                                            .foregroundColor(Color.damdaGray200)
+                                            .bold()
+                                            .padding(.top, 25)
+                                    } else {
+                                        Image(systemName: "chevron.up")
+                                            .foregroundColor(Color.damdaGray200)
+                                            .bold()
+                                            .padding(.top, 25)
+                                    }
+                                }
+                            }
+                            HStack {
+                                LibraryIncidentView(titleText: maturedString)
+                                    .padding(.top, 28)
+                                Button {
+                                    maturedEnable.toggle()
+                                    if maturedEnable {
+                                        // 등장
+                                    } else {
+                                        // 삭제
+                                    }
+                                } label: {
+                                    if maturedEnable {
+                                        Image(systemName: "chevron.down")
+                                            .foregroundColor(Color.damdaGray200)
+                                            .bold()
+                                            .padding(.top, 25)
+                                    } else {
+                                        Image(systemName: "chevron.up")
+                                            .foregroundColor(Color.damdaGray200)
+                                            .bold()
+                                            .padding(.top, 25)
+                                    }
+                                }
+                            }
+                            HStack {
+                                LibraryIncidentView(titleText: mysteryString)
+                                    .padding(.top, 28)
+                                Button {
+                                    mysteryEnable.toggle()
+                                    if mysteryEnable {
+                                        // 등장
+                                    } else {
+                                        // 삭제
+                                    }
+                                } label: {
+                                    if mysteryEnable {
                                         Image(systemName: "chevron.down")
                                             .foregroundColor(Color.damdaGray200)
                                             .bold()
