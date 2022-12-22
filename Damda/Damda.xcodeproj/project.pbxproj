@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3212D6FA293DE0D80080F3E0 /* CardHistoryDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3212D6F9293DE0D80080F3E0 /* CardHistoryDateView.swift */; };
+		3212D6FC293F7EF30080F3E0 /* LibraryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3212D6FB293F7EF30080F3E0 /* LibraryDetailView.swift */; };
+		3212D6FE293F7FCD0080F3E0 /* LibraryIncidentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3212D6FD293F7FCD0080F3E0 /* LibraryIncidentView.swift */; };
+		3212D7042943549F0080F3E0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3212D7032943549F0080F3E0 /* Model.swift */; };
 		321F5922291F98DD00FEE6DD /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321F5921291F98DD00FEE6DD /* Extension+Color.swift */; };
 		321F5924291F9EED00FEE6DD /* Extension+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321F5923291F9EED00FEE6DD /* Extension+Font.swift */; };
 		329FA049292CDBD90063981A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329FA048292CDBD90063981A /* HomeView.swift */; };
@@ -30,6 +33,9 @@
 
 /* Begin PBXFileReference section */
 		3212D6F9293DE0D80080F3E0 /* CardHistoryDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardHistoryDateView.swift; sourceTree = "<group>"; };
+		3212D6FB293F7EF30080F3E0 /* LibraryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryDetailView.swift; sourceTree = "<group>"; };
+		3212D6FD293F7FCD0080F3E0 /* LibraryIncidentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryIncidentView.swift; sourceTree = "<group>"; };
+		3212D7032943549F0080F3E0 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		321F5921291F98DD00FEE6DD /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
 		321F5923291F9EED00FEE6DD /* Extension+Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Font.swift"; sourceTree = "<group>"; };
 		329FA048292CDBD90063981A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -63,6 +69,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3212D7022943548B0080F3E0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3212D7032943549F0080F3E0 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		321F5920291F98B800FEE6DD /* Extension+ */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +111,8 @@
 				329FA056292D5C8D0063981A /* CardFrontView.swift */,
 				329FA058292D5CAC0063981A /* CardBackView.swift */,
 				3212D6F9293DE0D80080F3E0 /* CardHistoryDateView.swift */,
+				3212D6FB293F7EF30080F3E0 /* LibraryDetailView.swift */,
+				3212D6FD293F7FCD0080F3E0 /* LibraryIncidentView.swift */,
 			);
 			path = ReuseableViews;
 			sourceTree = "<group>";
@@ -120,6 +136,7 @@
 		B64995742918226900A70A9A /* Damda */ = {
 			isa = PBXGroup;
 			children = (
+				3212D7022943548B0080F3E0 /* Model */,
 				329FA04A292CF29D0063981A /* Library */,
 				329FA045292CDBAC0063981A /* Home */,
 				321F5920291F98B800FEE6DD /* Extension+ */,
@@ -222,8 +239,11 @@
 				3212D6FA293DE0D80080F3E0 /* CardHistoryDateView.swift in Sources */,
 				B68EBA8A292E5B3A003B994B /* MessageStyle.swift in Sources */,
 				329FA049292CDBD90063981A /* HomeView.swift in Sources */,
+				3212D7042943549F0080F3E0 /* Model.swift in Sources */,
 				B6CE8EC52930981B00172272 /* DateView.swift in Sources */,
+				3212D6FC293F7EF30080F3E0 /* LibraryDetailView.swift in Sources */,
 				B649957F2918226A00A70A9A /* Persistence.swift in Sources */,
+				3212D6FE293F7FCD0080F3E0 /* LibraryIncidentView.swift in Sources */,
 				329FA051292D53780063981A /* DetailView.swift in Sources */,
 				B68EBA88292E5B23003B994B /* MessageView.swift in Sources */,
 				B68EBA86292E5A37003B994B /* Message.swift in Sources */,
