@@ -28,18 +28,18 @@ struct HomeView: View {
                     
                     Spacer()
                     
-                    Button {
-                        // TODO: NavigationLink로 변경하여 date뷰로 이동
-                    } label: {
-                        Text("오늘의 사건 작성하기")
-                            .Headline()
-                            .foregroundColor(Color.damdaGray100)
-                            .padding(.vertical, 24)
-                            .frame(maxWidth: .infinity)
-                            .background(Color.damdaPrimary)
-                            .cornerRadius(16)
-                            .padding(.horizontal, 16)
-                    }
+
+                    NavigationLink (destination: MessageView()
+                        .navigationBarHidden(true)) {
+                            Text("오늘의 사건 작성하기")
+                                .Headline()
+                                .foregroundColor(Color.damdaGray100)
+                                .padding(.vertical, 24)
+                                .frame(maxWidth: .infinity)
+                                .background(Color.damdaPrimary)
+                                .cornerRadius(16)
+                                .padding(.horizontal, 16)
+                        }
                     
                     NavigationLink (destination: LibraryView()
                         .navigationBarHidden(true)) {

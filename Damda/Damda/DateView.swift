@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct DateView: View {
-    @Binding var selected : String?
+    @State var selected : String? // 선택한 Button
     @Binding var strengthenScroll: Bool
     @State var items: [String] = ["오늘", "어제", "2일전", "직접선택"]
-    @State private var date = Date()
+    @Binding var date: Date
+    @Binding var dateSelected: Bool // 날짜 선택했는지 유무
 
     var dateFormatter: DateFormatter {
            let formatter = DateFormatter()
@@ -24,12 +25,16 @@ struct DateView: View {
             HStack {
                 ForEach(items, id: \.self) { item in
                     Button(action: {
-                        selected = item
+                        self.selected = item
                         if (selected == "직접선택") {
-                            strengthenScroll.toggle()
+                            strengthenScroll = true
+                            
                         } else {
                             strengthenScroll = false
+                            date = getDate()
+                            dateSelected = true
                         }
+                        print(dateSelected)
                     }, label: {
                         Text(item)
                     })
@@ -40,40 +45,69 @@ struct DateView: View {
                     )
                     .foregroundColor(selected == item ? .damdaPrimary : .damdaGray100)
                     .padding(.bottom, 11)
-                    
                 }
             }
             
-            if (selected == "직접선택") {
-                DatePicker(
-                    selection: $date,
-                    in: ...Date(),
-                    displayedComponents: .date
-                ){
-                    Text("Pick Date")
+
+                if (selected == "직접선택") {
+                    DatePicker(
+                        selection: $date,
+                        in: ...Date(),
+                        displayedComponents: .date
+                    ){
+                        Text("Pick Date")
+                    }
+                    .onChange(of: date, perform: { newValue in
+                        dateSelected = true
+                    })
+                    .environment(\.locale, Locale.init(identifier: "en"))
+                    .accentColor(.damdaPrimary)
+                    .datePickerStyle(.graphical)
+                    .frame(width: 343, height: 351)
+                    .background(Color(UIColor(red: 28/255, green: 28/255, blue: 30/255, alpha: 1.0)))
+                    .cornerRadius(13)
+                    .shadow(color: .white.opacity(0.1), radius: 60, x: 0, y: 10)
                 }
-                .environment(\.locale, Locale.init(identifier: "en"))
-                .accentColor(.damdaPrimary)
-                .datePickerStyle(.graphical)
-                .frame(width: 343, height: 351)
-                .background(Color(UIColor(red: 28/255, green: 28/255, blue: 30/255, alpha: 1.0)))
-                .cornerRadius(13)
-                .shadow(color: .white.opacity(0.1), radius: 60, x: 0, y: 10)
-                
-                Text(date, formatter: dateFormatter)
-            }
             
         }
-        
     }
     
-}
 
-//struct DateView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        DateView()
+    func getDate() -> Date {
+        var dayComponent = DateComponents()
+        if selected == "오늘" {
+            dayComponent.day = 0
+        } else if selected == "어제" {
+            dayComponent.day = -1
+        } else if selected == "2일전"{
+            dayComponent.day = -2
+        }
+        
+        let calendar = Calendar.current
+        let nextDay =  calendar.date(byAdding: dayComponent, to: Date())!
+        return nextDay
+    }
+        
+        
+//    func getDate() -> String {
+//        var dayComponent = DateComponents()
+//        if selected == "오늘" {
+//            dayComponent.day = 0
+//        } else if selected == "어제" {
+//            dayComponent.day = -1
+//        } else if selected == "2일전"{
+//            dayComponent.day = -2
+//        }
+//
+//        let calendar = Calendar.current
+//        let nextDay =  calendar.date(byAdding: dayComponent, to: Date())!
+//        let formatter = DateFormatter()
+//        formatter.locale = .current
+//        formatter.dateFormat = "YYYY년 M월 d일"
+//
+//        return formatter.string(from: nextDay)
 //    }
-//}
+}
 
 struct DateButton: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
