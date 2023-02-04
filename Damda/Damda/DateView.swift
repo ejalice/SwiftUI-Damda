@@ -87,26 +87,6 @@ struct DateView: View {
         let nextDay =  calendar.date(byAdding: dayComponent, to: Date())!
         return nextDay
     }
-        
-        
-//    func getDate() -> String {
-//        var dayComponent = DateComponents()
-//        if selected == "오늘" {
-//            dayComponent.day = 0
-//        } else if selected == "어제" {
-//            dayComponent.day = -1
-//        } else if selected == "2일전"{
-//            dayComponent.day = -2
-//        }
-//
-//        let calendar = Calendar.current
-//        let nextDay =  calendar.date(byAdding: dayComponent, to: Date())!
-//        let formatter = DateFormatter()
-//        formatter.locale = .current
-//        formatter.dateFormat = "YYYY년 M월 d일"
-//
-//        return formatter.string(from: nextDay)
-//    }
 }
 
 struct DateButton: ButtonStyle {
