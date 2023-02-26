@@ -40,6 +40,18 @@ struct CardBackView : View {
                             .padding(.leading, 51)
                             
                             HStack {
+                                Text("사건발생일")
+                                    .foregroundColor(Color.damdaGray300)
+                                    .Subhead()
+                                // TODO: 데이터 받아와야 함
+                                Text("2023년 02월 17일(금)")
+                                    .Body1()
+                                Spacer()
+                            }
+                            .padding(.top, 36)
+                            .padding(.leading, 51)
+                            
+                            HStack {
                                 Text("어떤 일이 있었나요?")
                                     .foregroundColor(Color.damdaGray300)
                                     .Subhead()
@@ -50,7 +62,7 @@ struct CardBackView : View {
                             
                             // TODO: 데이터 받아와야 함
                             Text("야채 먹기 싫어서 안먹었는데 그거 가지고 하루 종일 꼽주네요 야채 안먹어도 살아 갈 수 있는데 어이 없네요 정말로 야채 안먹어도 잘 살았는데 왜그러는 걸까요")
-                                .foregroundColor(Color.damdaGray100)
+                                .foregroundColor(Color.white)
                                 .Body1()
                                 .padding(.top, 8)
                                 .padding(.leading, 51)
