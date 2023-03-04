@@ -21,7 +21,7 @@ struct DateView: View {
        }
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             HStack {
                 ForEach(items, id: \.self) { item in
                     Button(action: {
@@ -47,6 +47,7 @@ struct DateView: View {
                     .padding(.bottom, 11)
                 }
             }
+            .padding(.leading, 16)
             
 
                 if (selected == "직접선택") {
