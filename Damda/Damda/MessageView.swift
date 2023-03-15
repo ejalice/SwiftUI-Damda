@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MessageView: View {
+    @Environment(\.managedObjectContext) var managedObjectContext
+    
     @State var showFirstMessage: [Bool] = [false, false, false, false, false]
     @State var dateSelected: Bool = false
     @State var selected: String?
