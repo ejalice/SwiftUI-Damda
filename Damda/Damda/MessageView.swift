@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MessageView: View {
+    @Environment(\.managedObjectContext) var managedObjectContext
+    
     @State var showFirstMessage: [Bool] = [false, false, false, false, false]
     @State var dateSelected: Bool = false
     @State var selected: String?
@@ -108,6 +110,7 @@ struct MessageView: View {
                                 Button {
                                     nicknameEntered = true
                                     nickname = nicknameInput
+                                    addDrink()
                                 } label: {
                                     Image(systemName: "paperplane.fill")
                                         .foregroundColor(.damdaGray100)
@@ -161,15 +164,23 @@ struct MessageView: View {
         }
         return textViewHeight
     }
-}
-
-
-
-struct MessageView_Previews: PreviewProvider {
-    static var previews: some View {
-        MessageView()
+    
+    // 코어데이터 테스트
+    func addDrink() {
+        let newDrink = Drink(context: managedObjectContext)
+        
+        newDrink.id = UUID()
+//        newDrink.startDate = UserText(dateFormatter.string(from: date))
+        newDrink.drinkName = nickname
+        newDrink.content = content
+        newDrink.brokenDate = Date()
+        
+        try? managedObjectContext.save()
     }
+    
+    
 }
+
 
 // https://www.youtube.com/watch?v=Jf8SzGLaRdA
 struct AutoSizingTF: UIViewRepresentable {

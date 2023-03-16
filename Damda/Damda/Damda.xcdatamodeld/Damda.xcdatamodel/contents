@@ -7,12 +7,10 @@
         <attribute name="extendOneDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="extendTwoDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="history" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="imageName" optional="YES" attributeType="String"/>
         <attribute name="incidientDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="maturedDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="startDate" optional="YES" attributeType="String"/>
-    </entity>
-    <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
-        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
     </entity>
 </model>
