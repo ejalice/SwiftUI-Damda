@@ -11,6 +11,6 @@
         <attribute name="imageName" optional="YES" attributeType="String"/>
         <attribute name="incidientDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="maturedDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
-        <attribute name="startDate" optional="YES" attributeType="String"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
     </entity>
 </model>

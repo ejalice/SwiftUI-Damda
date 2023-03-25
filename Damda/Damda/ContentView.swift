@@ -15,7 +15,9 @@ struct ContentView: View {
             List {
                 ForEach(drinks) { item in
                     NavigationLink {
-                        Text(item.brokenDate ?? Date(), format: .dateTime)
+                        Text(item.startDate ?? Date(), format: .dateTime)
+                        Text(item.content ?? "")
+                        Text(item.incidientDate ?? Date(), format: .dateTime)
                     } label: {
                         Text(item.drinkName ?? "?")
                     }

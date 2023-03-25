@@ -13,7 +13,7 @@ struct DamdaApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LibraryView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
                 .preferredColorScheme(.dark)
         }

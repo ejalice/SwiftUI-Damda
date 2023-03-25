@@ -110,7 +110,6 @@ struct MessageView: View {
                                 Button {
                                     nicknameEntered = true
                                     nickname = nicknameInput
-                                    addDrink()
                                 } label: {
                                     Image(systemName: "paperplane.fill")
                                         .foregroundColor(.damdaGray100)
@@ -135,6 +134,7 @@ struct MessageView: View {
                                 Button {
                                     contentEntered = true
                                     content = contentInput
+                                    addDrink()
                                 } label: {
                                     Image(systemName: "paperplane.fill")
                                         .foregroundColor(.damdaGray100)
@@ -168,12 +168,14 @@ struct MessageView: View {
     // 코어데이터 테스트
     func addDrink() {
         let newDrink = Drink(context: managedObjectContext)
+        let imageNames = ["Bottle_01", "Bottle_02", "Bottle_03", "Bottle_04", "Bottle_05", "Bottle_06"]
         
         newDrink.id = UUID()
-//        newDrink.startDate = UserText(dateFormatter.string(from: date))
         newDrink.drinkName = nickname
         newDrink.content = content
-        newDrink.brokenDate = Date()
+        newDrink.startDate = Date()
+        newDrink.incidientDate = date
+        newDrink.imageName = imageNames.randomElement()
         
         try? managedObjectContext.save()
     }

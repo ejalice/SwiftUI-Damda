@@ -11,6 +11,13 @@ struct LibraryView: View {
     let model = Model()
     
     @Environment(\.presentationMode) var presentationMode
+    @Environment(\.managedObjectContext) var managedObjectContext
+    @FetchRequest(
+        sortDescriptors: [],
+        animation: .default)
+    private var drinks: FetchedResults<Drink>
+    
+    
     // 숙성 중
     @State private var ripeningEnable = false
     // 숙성 완료
@@ -42,7 +49,7 @@ struct LibraryView: View {
                     ScrollView {
                         VStack(spacing: 0) {
                             HStack {
-                                LibraryIncidentView(titleText: ripeningString, bottleCount: model.ripeningBottleImageArray.count)
+                                LibraryIncidentView(titleText: ripeningString, bottleCount: drinks.count)
                                     .padding(.top, 28)
                                 Button {
                                     ripeningEnable.toggle()
