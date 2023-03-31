@@ -18,7 +18,6 @@ struct CardFrontView : View {
     var body: some View {
         
         VStack{
-            Spacer()
                 Rectangle()
                     .cornerRadius(16)
                     .foregroundColor(Color.damdaGray500)
