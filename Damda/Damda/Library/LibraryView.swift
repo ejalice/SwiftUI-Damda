@@ -49,7 +49,7 @@ struct LibraryView: View {
                     ScrollView {
                         VStack(spacing: 0) {
                             HStack {
-                                LibraryIncidentView(titleText: ripeningString, bottleCount: drinks.count)
+                                LibraryIncidentView(titleText: ripeningString, bottleCount: drinks.filter({$0.maturedDate == nil && $0.brokenDate == nil}).count)
                                     .padding(.top, 28)
                                 Button {
                                     ripeningEnable.toggle()
@@ -75,7 +75,7 @@ struct LibraryView: View {
                                 // 삭제
                             }
                             HStack {
-                                LibraryIncidentView(titleText: maturedString, bottleCount: model.maturedBottleImageArray.count)
+                                LibraryIncidentView(titleText: maturedString, bottleCount: drinks.filter({$0.maturedDate != nil && $0.brokenDate == nil}).count)
                                     .padding(.top, 28)
                                 Button {
                                     maturedEnable.toggle()
@@ -106,7 +106,7 @@ struct LibraryView: View {
                                 // 삭제
                             }
                             HStack {
-                                LibraryIncidentView(titleText: mysteryString, bottleCount: model.mysteryBottleImageArray.count)
+                                LibraryIncidentView(titleText: mysteryString, bottleCount: drinks.filter({$0.brokenDate != nil}).count)
                                     .padding(.top, 28)
                                 Button {
                                     mysteryEnable.toggle()
