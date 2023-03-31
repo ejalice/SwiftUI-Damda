@@ -69,7 +69,7 @@ struct LibraryView: View {
                             }
                             if ripeningEnable {
                                 // 등장
-                                LibraryDetailView(imageArray: model.ripeningBottleImageArray)
+                                LibraryDetailView(imageArray: drinks.filter({$0.maturedDate == nil && $0.brokenDate == nil}))
                                     .padding(.top, 16)
                             } else {
                                 // 삭제
@@ -100,7 +100,7 @@ struct LibraryView: View {
                             }
                             if maturedEnable {
                                 // 등장
-                                LibraryDetailView(imageArray: model.maturedBottleImageArray)
+                                LibraryDetailView(imageArray: drinks.filter({$0.maturedDate != nil && $0.brokenDate == nil}))
                                     .padding(.top, 16)
                             } else {
                                 // 삭제
@@ -131,7 +131,7 @@ struct LibraryView: View {
                             }
                             if mysteryEnable {
                                 // 등장
-                                LibraryDetailView(imageArray: model.mysteryBottleImageArray)
+                                LibraryDetailView(imageArray: drinks.filter({$0.brokenDate != nil}))
                                     .padding(.top, 16)
                             } else {
                                 // 삭제
