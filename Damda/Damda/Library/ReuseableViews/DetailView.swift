@@ -12,6 +12,8 @@ struct DetailView: View {
     @State var frontDegree = 0.0
     @State var isFlipped = false
     
+    var drink: Drink
+    
     let durationAndDelay : CGFloat = 0.3
     
     func flipCard () {
@@ -73,8 +75,8 @@ struct DetailView: View {
 }
 
 
-struct DetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        DetailView()
-    }
-}
+//struct DetailView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        DetailView()
+//    }
+//}
