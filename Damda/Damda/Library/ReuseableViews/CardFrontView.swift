@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CardFrontView : View {
     let imageName: String
+    let drinkName: String
     let width : CGFloat
     let height : CGFloat
     @Binding var degree : Double
@@ -26,11 +27,11 @@ struct CardFrontView : View {
                     .overlay(
                         VStack(spacing: 0){
                             Spacer()
-                            Image("Bottle_01")
+                            Image(imageName)
                                 .resizable()
                                 .frame(maxWidth: 138, maxHeight: 355)
                                 .scaledToFit()
-                            Text("앞")
+                            Text("\(drinkName)주")
                                 .LargeTitle()
                                 .bold()
                                 .foregroundColor(Color.damdaGray100)

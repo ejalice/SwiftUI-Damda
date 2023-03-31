@@ -39,9 +39,9 @@ struct DetailView: View {
         ZStack{
             Color.damdaBackGround.ignoresSafeArea()
             ZStack{
-                CardBackView(imageName: "Bottle_01", width: 358, height: 660, degree: $backDegree, isFlipped: $isFlipped)
+                CardBackView(imageName: drink.imageName ?? "", width: 358, height: 660, degree: $backDegree, isFlipped: $isFlipped)
                 ZStack{
-                    CardFrontView(imageName: "Bottle_01", width: 358, height: 660, degree: $frontDegree, isFlipped: $isFlipped)
+                    CardFrontView(imageName: drink.imageName ?? "", drinkName: drink.drinkName ?? "", width: 358, height: 660, degree: $frontDegree, isFlipped: $isFlipped)
                     VStack(spacing: 0) {
                         Spacer()
                         Button{
